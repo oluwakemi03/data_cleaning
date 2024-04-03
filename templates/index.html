@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>IOT Data Cleaning App</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+    <p>Number of missing values: {{ num_missing_values }}</p>
+<div class="container">
+    <div class="card">
+      <h3>Upload Files</h3>
+      <div class="drop_box">
+        <header>
+          <h4>Select File here</h4>
+        </header>
+        <p>Files Supported: CSV, TXT</p>
+        <form method=post enctype=multipart/form-data action="/upload">
+        <input type=file name=file >
+        <button type=submit class="btn" value=Upload >Upload</button>  
+    </form>
+      </div>
+  
+    </div>
+  </div>
+  <!-- partial -->
+
+
+  
+  </body>
