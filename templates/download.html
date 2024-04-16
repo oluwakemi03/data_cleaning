@@ -1,4 +1,14 @@
-<!doctype html>
-<title>Download CSV File</title>
-<h1>Download CSV File</h1>
-<p><a href="{{ url_for('static', filename='uploads/' + filename) }}">Download cleaned CSV file</a></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Download</title>
+</head>
+<body>
+  <p>Your file has been cleaned and is ready for download.</p>
+  <button onclick="window.location.href='/uploads/{{ filename }}'">Download Excel</button>
+</body>
+</html>
+
+
+
